@@ -51,21 +51,20 @@ class _MyHomePageState extends State<MyHomePage> {
           widget.title,
           style: TextStyle(
             fontSize: 24.0
-        )
-      ),
-    ),
-      body: Material(
-          child: InkWell(
-            onTap: _changeColor,
-            child: Container(color: _color,
-              child: Center(
-                child: Text(
-                  'Hey there',
-                    style: TextStyle(
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.blue
-                  ))
-              )))
-            )
-          );}}
+        )))
+    body: Material(
+      child: InkWell(
+        onTap: _changeColor,
+          child: Container(color: _color,
+            child: Center(
+              child: Text(
+              'Hey there',
+              style: TextStyle(
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.blue
+          ))
+        ))
+      ))
+    );
+  }}
